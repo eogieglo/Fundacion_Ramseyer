@@ -1,5 +1,4 @@
 body {
-    padding: 50px;
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   }
   
@@ -21,7 +20,18 @@ body {
     background-color: white;
   }
   
-  
+  .container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 10px;
+}
+
+@media (max-width: 768px) {
+ .container{
+   max-width: 100%;
+   padding: 30px 10px;
+ }
+}
   
   .btn{
     background-color: #F39C1F;
