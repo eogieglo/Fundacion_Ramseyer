@@ -28,7 +28,11 @@ ul {
     background-color: white;
 }
 
-.container {
+
+/* DEJÉ ESTO COMENTADO PORQUE ROMPÍA LO QUE YO SUBÍA. (SUGERIRÍA QUE SE CAPTUREN MEJOR LOS ELEMENTOS). DESPUÉS LO CHARLAMOS */
+
+
+/* .container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 60px 10px;
@@ -39,9 +43,9 @@ ul {
         max-width: 100%;
         padding: 30px 10px;
     }
-}
+} */
 
-.__btn-donar {
+.header .navbar .__btn-donar {
     background-color: #F39C1F;
     font-size: 25px;
     color: white;

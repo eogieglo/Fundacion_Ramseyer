@@ -49,18 +49,18 @@
 
 /* ICONOS REDES SOCIALES */
 
-a {
+.footer-social-icons a {
     text-decoration: none;
     color: #fff;
 }
 
-ul {
+.footer-social-icons ul {
     padding: 0;
     list-style: none;
 }
 
 .footer-social-icons {
-    width: 350px;
+    width: 400px;
     display: block;
     margin: 0 auto;
 }
