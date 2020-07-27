@@ -12,6 +12,12 @@
     background-color: rgb(246, 232, 242);
 }
 
+.containerDonar {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 10px;
+}
+
 .__donar .__botones-donar .__btn-donar {
     width: 150px!important;
     height: 100px!important;
@@ -35,6 +41,5 @@
         color: #000!important;
     }
 }
-
 
 /* FIN ESTILO DONAR */
