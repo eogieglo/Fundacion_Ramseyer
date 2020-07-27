@@ -3,9 +3,9 @@
 }
 
 
-/* h1 {
+.tituloH1 {
     font-size: 100px;
-} */
+} 
 
 .involucrate {
     background-color: #F0D9EA;
@@ -14,3 +14,16 @@
 hr {
     border-color: black;
 }
+
+.containerInvolucrate {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 10px;
+}
+
+@media (max-width: 768px) {
+    .containerInvolucrate {
+        max-width: 100%;
+        padding: 30px 10px;
+    }
+} 

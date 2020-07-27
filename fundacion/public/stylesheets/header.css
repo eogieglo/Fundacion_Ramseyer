@@ -32,18 +32,7 @@ ul {
 /* DEJÉ ESTO COMENTADO PORQUE ROMPÍA LO QUE YO SUBÍA. (SUGERIRÍA QUE SE CAPTUREN MEJOR LOS ELEMENTOS). DESPUÉS LO CHARLAMOS */
 
 
-/* .container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 60px 10px;
-}
 
-@media (max-width: 768px) {
-    .container {
-        max-width: 100%;
-        padding: 30px 10px;
-    }
-} */
 
 .header .navbar .__btn-donar {
     background-color: #F39C1F;
