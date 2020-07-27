@@ -11,48 +11,38 @@ body {
     overflow-x: hidden;
 }
 
+.header .__ul-nav .__li-nav a {
+    font-size: 16px;
+}
+
 a {
     color: #00B7FF;
 }
 
-ul {
-    padding-top: 20px;
+.logo {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 350px;
 }
 
-.logo {
-    width: 150%;
-    height: 125px;
+.header .__btn-donar:hover {
+    color: #000!important;
+    border: 1px solid #000;
+    background-color: rgb(233, 142, 14);
 }
 
 .navbar-brand {
     background-color: white;
 }
 
-
-/* DEJÉ ESTO COMENTADO PORQUE ROMPÍA LO QUE YO SUBÍA. (SUGERIRÍA QUE SE CAPTUREN MEJOR LOS ELEMENTOS). DESPUÉS LO CHARLAMOS */
-
-
-
-
-.header .navbar .__btn-donar {
+.header .__btn-donar {
     background-color: #F39C1F;
     font-size: 25px;
     color: white;
     text-transform: uppercase;
-    margin-right: 30px;
-    line-height: 10px;
-    padding: 25px;
-}
-
-#navbarNav {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    flex-direction: row;
-}
-
-li a {
-    font-size: 20px;
+    height: 50px;
+    width: 80px;
 }
 
 .bg-light {
