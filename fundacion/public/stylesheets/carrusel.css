@@ -3,7 +3,7 @@
     margin: 0 auto;
 }
 
-.carrusel img{
+.carrusel img {
     height: 500px;
     object-fit: cover;
 }
