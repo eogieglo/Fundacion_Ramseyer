@@ -35,8 +35,10 @@
 /* LOGO DEL FOOTER */
 
 .site-footer .__img-logo {
+    margin: 10px 0;
     max-height: 100px;
-    /* height: 100%;
+    /* 
+    height: 100%;
     max-width: 100px;
     width: 100%;
     border-radius: 50%;
