@@ -16,11 +16,12 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
-
-
 </head>
 
 <body>
+    <!-- Boton hacia arriba -->
+    <span class="ir-arriba fa fa-angle-up"></span>
+
     <%- include('partials/header.ejs') -%>
         <%- include('carrusel.ejs') -%>
             <%- include('partials/nosotros.ejs') %>
@@ -30,6 +31,9 @@
                             <%- include('donar.ejs') -%>
                                 <%- include('partials/footer.ejs') -%>
                                     <%- include('partials/script.ejs') -%>
+
+                                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                                        <script src="js/arriba.js"></script>
 </body>
 
 </html>

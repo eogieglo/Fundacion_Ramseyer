@@ -11,6 +11,30 @@ body {
     overflow-x: hidden;
 }
 
+
+/* Flecha para hacer la pagina hacia arriba */
+
+body .ir-arriba {
+    border-radius: 5px;
+    display: none;
+    padding: 20px;
+    background: #024959;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+body .ir-arriba:hover {
+    transition: 0.5s;
+    background-color: #023441;
+}
+
+
+/* FIN Flecha para hacer la pagina hacia arriba */
+
 .header .__ul-nav .__li-nav a {
     font-size: 16px;
 }
