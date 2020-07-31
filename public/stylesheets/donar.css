@@ -1,0 +1,47 @@
+/* ESTILO DONAR */
+
+.__donar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(246, 232, 242);
+    line-height: 25px;
+}
+
+.__donar .__textos-donar .__card-donar {
+    background-color: rgb(246, 232, 242);
+}
+
+.containerDonar {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 10px;
+}
+
+.__donar .__botones-donar .__btn-donar {
+    width: 150px!important;
+    height: 100px!important;
+    font-size: 20px;
+    background-color: rgb(243, 156, 31);
+    border-radius: 10px;
+    transition: transform 0.5 ease;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .65);
+}
+
+.__donar .__botones-donar .__btn-donar:hover {
+    color: #000!important;
+    background-color: rgb(233, 142, 14);
+    transform: scale(1.01);
+}
+
+@media screen and (max-width: 700px) {
+    .__donar .__botones-donar .__btn-donar {
+        width: 150px!important;
+        height: 75px!important;
+        font-size: 12px;
+        color: #000!important;
+    }
+}
+
+
+/* FIN ESTILO DONAR */

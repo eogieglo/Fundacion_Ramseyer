@@ -1,0 +1,128 @@
+/*-----Estilo Contenedor Acciones concretas-----*/
+#acciones{
+    max-width: 1400px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+/*--------Titulo Acciones concretas----------*/
+.titulo-acciones{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    padding-bottom: 0px;
+}
+/*----------Estilo Parrafos-----------*/
+.lead{
+    font-family: Questrial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    padding-top: 20px;
+    width: 95%;
+}
+/*------------Estilo Botones-----------*/
+#ir{
+    width: 20%;
+    font-size: small;
+    margin: 5px;
+    color: white;
+    background-color: rgb(243, 156, 31);
+    border-radius: 10px;
+    transition: transform 0.5 ease;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .65);
+}
+#donar{
+    width: 40%;
+    font-size: small;
+    margin: 5px;
+    color: white;
+    background-color: rgb(243, 156, 31);
+    border-radius: 10px;
+    transition: transform 0.5 ease;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .65);
+}
+#ir:hover{
+    color: #000!important;
+    background-color: rgb(233, 142, 14);
+    transform: scale(1.01);
+}
+
+#donar:hover{
+    color: #000!important;
+    background-color: rgb(233, 142, 14);
+    transform: scale(1.01);
+}
+
+/* Featurettes
+------------------------- */
+
+ /* Space out the Bootstrap <hr> more */
+.featurette-divider {
+    margin: 3rem 0;
+    width: 95%;
+    
+  }
+  #divider-title{
+    margin-top: 0px;
+}
+  
+  /* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+    font-family: Questrial;
+    font-style: normal;
+    font-weight: bold;
+  }
+#img-acciones{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+  
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 800px) and (max-width: 1000px) {
+    #ir{
+        width: 35%;
+    }
+    #donar{
+        width: 50%;
+    }
+}
+@media(max-width: 799px) {
+   
+    #ir{
+        width: 400px;
+        font-size: 20px;
+    }
+    #donar{
+        width: 400px;
+        font-size: 20px;
+        
+    }
+    .featurette{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #p-acciones{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    #img-contenedor{
+        order: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
+}
+  

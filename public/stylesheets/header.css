@@ -1,0 +1,78 @@
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: white;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+/* Flecha para hacer la pagina hacia arriba */
+
+body .ir-arriba {
+    border-radius: 5px;
+    display: none;
+    padding: 20px;
+    background: #024959;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+body .ir-arriba:hover {
+    transition: 0.5s;
+    background-color: #023441;
+}
+
+
+/* FIN Flecha para hacer la pagina hacia arriba */
+
+.header .__ul-nav .__li-nav a {
+    font-size: 16px;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.logo {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 350px;
+}
+
+.header .__btn-donar {
+    background-color: #F39C1F;
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    transition: transform 0.5 ease;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .65);
+}
+
+.header .__btn-donar:hover {
+    color: #000!important;
+    background-color: rgb(233, 142, 14);
+    transform: scale(1.01);
+}
+
+.navbar-brand {
+    background-color: white;
+}
+
+.bg-light {
+    background-color: white!important;
+}
