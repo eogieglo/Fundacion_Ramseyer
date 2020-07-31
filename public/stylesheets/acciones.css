@@ -1,28 +1,38 @@
 /*-----Estilo Contenedor Acciones concretas-----*/
-#acciones{
+
+#acciones {
     max-width: 1400px;
     width: 95%;
     display: flex;
     flex-direction: column;
 }
+
+
 /*--------Titulo Acciones concretas----------*/
-.titulo-acciones{
+
+.titulo-acciones {
     display: flex;
     justify-content: start;
     align-items: flex-start;
     padding-bottom: 0px;
 }
+
+
 /*----------Estilo Parrafos-----------*/
-.lead{
+
+.lead {
     font-family: Questrial;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     padding-top: 20px;
-    width: 95%;
+    line-height: 20px;
 }
+
+
 /*------------Estilo Botones-----------*/
-#ir{
+
+#ir {
     width: 20%;
     font-size: small;
     margin: 5px;
@@ -32,7 +42,8 @@
     transition: transform 0.5 ease;
     box-shadow: 0 15px 50px rgba(0, 0, 0, .65);
 }
-#donar{
+
+#donar {
     width: 40%;
     font-size: small;
     margin: 5px;
@@ -42,50 +53,65 @@
     transition: transform 0.5 ease;
     box-shadow: 0 15px 50px rgba(0, 0, 0, .65);
 }
-#ir:hover{
+
+#ir:hover {
     color: #000!important;
     background-color: rgb(233, 142, 14);
     transform: scale(1.01);
 }
 
-#donar:hover{
+#donar:hover {
     color: #000!important;
     background-color: rgb(233, 142, 14);
     transform: scale(1.01);
 }
+
 
 /* Featurettes
 ------------------------- */
 
- /* Space out the Bootstrap <hr> more */
+
+/* Space out the Bootstrap <hr> more */
+
 .featurette-divider {
     margin: 3rem 0;
     width: 95%;
-    
-  }
-  #divider-title{
+}
+
+#divider-title {
     margin-top: 0px;
 }
-  
-  /* Thin out the marketing headings */
+
+
+/* Thin out the marketing headings */
+
 .featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -.05rem;
+    font-size: 28px;
     font-family: Questrial;
     font-style: normal;
     font-weight: bold;
-  }
-#img-acciones{
+}
+
+#img-acciones {
     width: 300px;
     height: 300px;
     border-radius: 50%;
+    border: 3px solid #000;
 }
-  
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-@media (min-width: 800px) and (max-width: 1000px) {
+
+@media(max-width: 700px) {
+    #img-acciones {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+/* @media (min-width: 800px) and (max-width: 1000px) {
     #ir{
         width: 35%;
     }
@@ -125,4 +151,4 @@
         margin-bottom: 5%;
     }
 }
-  
+   */
