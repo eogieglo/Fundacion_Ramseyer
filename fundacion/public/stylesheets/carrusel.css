@@ -1,9 +1,0 @@
-.carrusel {
-    max-height: 1000px;
-    margin: 0 auto;
-}
-
-.carrusel img {
-    height: 500px;
-    object-fit: cover;
-}
