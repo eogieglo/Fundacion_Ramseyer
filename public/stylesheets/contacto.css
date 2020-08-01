@@ -9,3 +9,8 @@
 .bf_text_contact{
 	margin-bottom: 80px;
 }
+
+.bf_submit_button{
+	color: white;
+	background: rgb(243, 156, 31);
+}
