@@ -61,3 +61,40 @@
     font-weight: bold;
     margin-top: 5%;
   }
+
+  /* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width:950px) and (max-width: 1150px) {
+    .img-nosotrosCarlos{
+        width: 96%;
+}
+    } 
+@media (max-width: 1000px) {
+    .featurette{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .contendor-1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #container-p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .img-nosotrosBebe{
+        width: 95%;
+        height: 95%;
+    }
+    .img-nosotrosNiños{
+        width: 95%;
+        height: 95%;
+    }
+}
