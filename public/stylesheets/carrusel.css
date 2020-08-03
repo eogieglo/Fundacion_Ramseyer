@@ -7,3 +7,75 @@
     height: 500px;
     object-fit: cover;
 }
+
+.carrusel ol li {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+.carousel-inner .carousel-item .__carousel-caption {
+    overflow: hidden;
+    left: 0;
+    animation-name: slidein;
+    background-color: rgba(0, 0, 0, .7);
+    animation: blur 1s ease 0s;
+    -webkit-animation: blur 1s ease 0s;
+    -moz-animation: blur 1s ease 0s;
+}
+
+@keyframes blur {
+    0%,
+    90% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+    }
+    50% {
+        -webkit-filter: blur(50px);
+        -moz-filter: blur(50px);
+        -o-filter: blur(50px);
+        -ms-filter: blur(50px);
+    }
+}
+
+.carousel-inner .carousel-item .__carousel-caption p {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.carousel-inner .carousel-item .__carousel-caption p,
+.carousel-inner .carousel-item .__carousel-caption h6 {
+    animation-duration: 1.5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.carousel-inner .carousel-item .__carousel-caption .__img-caption {
+    margin-left: 40px;
+    height: 100%;
+    max-height: 100px;
+}
+
+@media screen and (max-width: 700px) {
+    .carrusel img {
+        height: 400px;
+    }
+    .carousel-inner .carousel-item .__carousel-caption p {
+        font-size: 12px;
+    }
+    .carousel-inner .carousel-item .__carousel-caption h6 {
+        font-size: 14px;
+    }
+}
