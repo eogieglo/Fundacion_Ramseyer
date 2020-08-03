@@ -4,8 +4,8 @@ const donarController = require('../controllers/donarController');
 
 
 
-router.get("/donar", donarController.vista);
-router.post("/donar",donarController.mercadopago)
+router.get("/donar/transferencia", donarController.vista);
+//router.post("/donar",donarController.mercadopago)
 
 
 
