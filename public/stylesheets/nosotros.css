@@ -41,13 +41,18 @@
     height: 250px;
     margin: 0px;
     padding: 0px;
+    border: outset;
+    padding: 1px;
 }
 .img-nosotrosBebe{
     width: 550px;
     height: 413px;
+    border: outset;
+    padding: 1px;
 }
 .img-nosotrosNiños{
-    padding-bottom: 9%;
+    padding: 1px;
+    border: outset;
 }
 #fund-datos{
     display: flex;
