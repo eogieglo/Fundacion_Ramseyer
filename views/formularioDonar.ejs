@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-   
-    <form action="/procesar-pago" method="POST">
-  <script
-   src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-   data-preference-id="$$id$$">
-  </script>
-</form>
+<body>   
+  <form method="POST">
+    <script
+     src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+     data-preference-id='<%=preference.response.id %>'>
+    </script>
+  </form>
     
 </body>
 </html>
