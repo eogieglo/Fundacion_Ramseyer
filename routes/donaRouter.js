@@ -4,7 +4,7 @@ const donarController = require('../controllers/donarController');
 
 
 
-router.get("/donar", donarController.botonDonar);
+router.get("/donar", donarController.vista);
 //router.post("/donar",donarController)
 
 
