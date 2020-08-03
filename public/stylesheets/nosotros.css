@@ -1,6 +1,6 @@
+
 /*-----Estilo Contenedor Nosotros-----*/
 .nosotros{
-    /* max-width: 1400px; */
     display: flex;
     flex-direction: column;
     background-color:#F6E8F2;
@@ -23,10 +23,8 @@
     line-height: 24px;
     
 }
-/* Featurettes
-------------------------- */
 
- /* Space out the Bootstrap <hr> more */
+ /* ---Divisor <hr> -------*/
  .featurette-divider {
     margin: 3rem 0;
     width: 95%;
@@ -35,25 +33,30 @@
   #divider-title{
     margin-top: 0px;
 }
+/*----------Estilo Imagenes -----------*/
 
 .img-nosotrosCarlos{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 220px;
     margin: 0px;
     padding: 0px;
     border: outset;
     padding: 1px;
 }
 .img-nosotrosBebe{
-    width: 550px;
-    height: 413px;
+    width: 480px;
+    height: 350px;
     border: outset;
     padding: 1px;
 }
 .img-nosotrosNiños{
+    width: 350px;
+    height: 300px;
     padding: 1px;
     border: outset;
 }
+
+/*----------Estilo Datos Fundación-----------*/
 #fund-datos{
     display: flex;
     align-items: center;
@@ -75,13 +78,7 @@
 }
     } 
 @media (max-width: 1000px) {
-    /* .featurette{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    } */
-    
+
     .contendor-1{
         display: flex;
         align-items: center;
@@ -101,5 +98,11 @@
     .img-nosotrosNiños{
         width: 95%;
         height: 95%;
+    }
+}
+@media (max-width: 500px){
+    .img-nosotrosNiños{
+        margin-top: 20%;
+        
     }
 }
