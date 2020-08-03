@@ -1,9 +1,9 @@
 /*-----Estilo Contenedor Nosotros-----*/
-#nosotros{
-    max-width: 1400px;
+.nosotros{
+    /* max-width: 1400px; */
     display: flex;
     flex-direction: column;
-    background-color: rgba(240, 217, 234, 0.6);
+    background-color:#F6E8F2;
 }
 /*--------Titulo Nosotros----------*/
 .titulo-nosotros{
@@ -64,18 +64,18 @@
 
   /* RESPONSIVE CSS
 -------------------------------------------------- */
-@media (min-width:950px) and (max-width: 1150px) {
+@media (min-width:992px) and (max-width: 1150px) {
     .img-nosotrosCarlos{
         width: 96%;
 }
     } 
 @media (max-width: 1000px) {
-    .featurette{
+    /* .featurette{
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    }
+    } */
     
     .contendor-1{
         display: flex;
