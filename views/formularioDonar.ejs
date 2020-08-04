@@ -8,7 +8,7 @@
   <title>Document</title>
 </head>
 <body>
-  <form action="/procesar_pago.php" method="post" id="pay" name="pay" >
+  <form action="/donar/procesar_pago" method="post" id="pay" name="pay" >
     <fieldset>
         <p>
             <label for="description">Descripción</label>                        
@@ -21,6 +21,7 @@
         <p>
             <label for="cardNumber">Número de la tarjeta</label>
             <input type="text" id="cardNumber" data-checkout="cardNumber" onselectstart="return false" onpaste="return false" onCopy="return false" onCut="return false" onDrag="return false" onDrop="return false" autocomplete=off />
+            <input name="payment_method_id" id="payment_method_id"/>
         </p>
         <p>
             <label for="cardholderName">Nombre y apellido</label>
@@ -53,9 +54,9 @@
         <p>
             <label for="email">Email</label>
             <input type="email" id="email" name="email" value="test@test.com"/>
-        </p>  
-        <input type="hidden" name="payment_method_id" id="payment_method_id"/>
-        <input type="submit" value="Pagar"/>
+        </p> 
+       
+        <input type="submit"  value="Pagar"/>
     </fieldset>
 </form>
 <script src="js/mercadoPago.js"></script>
