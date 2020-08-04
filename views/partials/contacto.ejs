@@ -12,7 +12,7 @@
         <hr class="pb-3">
 
         <!-- FOMULARIO -->
-        <form class="mt-5 mb-5">
+        <form class="mt-5 mb-5" action="/contactanos" method="POST">
 
             <div class="row">
                 <!-- INPUTS -->
@@ -20,19 +20,19 @@
                     <!-- NOMBRE  -->
                     <div class="form-group ">
                         <label for="name-contact">Nombre</label>
-                        <input placeholder="Ej Juan Perez" type="email" class="form-control" id="name-contact" aria-describedby="emailHelp">
+                        <input name="nombre" placeholder="Ej Juan Perez" type="text" class="form-control" id="name-contact" aria-describedby="emailHelp">
                     </div>
 
                     <!-- EMAIL  -->
                     <div class="form-group ">
                         <label for="email-contact">Email</label>
-                        <input placeholder="Ej juanperez@gmail.com" type="password" class="form-control" id="email-contact">
+                        <input name="email" placeholder="Ej juanperez@gmail.com" type="email" class="form-control" id="email-contact">
                     </div>
 
                     <!-- ASUNTO -->
                     <div class="form-group">
                         <label for="subject-contact">Asunto</label>
-                        <input placeholder="Ej Contacto" type="password" class="form-control" id="subject-contact">
+                        <input name="asunto" placeholder="Ej Contacto" type="text" class="form-control" id="subject-contact">
                     </div>
                 </div>
 
@@ -41,7 +41,7 @@
                 <!-- MENSAJE -->
                 <div class="form-group col-md-7 ">
                     <label class="mb-2" for="message">Mensaje</label>
-                    <textarea placeholder="Aqui escribe el mensaje" class="bf_contact-textarea form-control" id="message" rows="7"></textarea>
+                    <textarea name="mensaje" placeholder="Aqui escribe el mensaje" class="bf_contact-textarea form-control" id="message" rows="7"></textarea>
                 </div>
 
             </div>
