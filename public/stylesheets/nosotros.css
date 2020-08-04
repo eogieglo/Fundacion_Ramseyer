@@ -5,70 +5,56 @@
     flex-direction: column;
     background-color:#F6E8F2;
 }
-/*--------Titulo Nosotros----------*/
-.titulo-nosotros{
-    display: flex;
-    justify-content: start;
-    align-items: flex-start;
-    padding-bottom: 0px;
-    margin-left: 3%;
-    margin-top: 3%;
-}
 /*----------Estilo Parrafos-----------*/
 .p-nosotros{
-    font-family: Questrial;
+    font-family: Arial;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
-    
+}
+.sub-datos{
+    padding-left: 5%;
 }
 
- /* ---Divisor <hr> -------*/
- .featurette-divider {
-    margin: 3rem 0;
-    width: 95%;
-    
-  }
-  #divider-title{
-    margin-top: 0px;
-}
+
+
 /*----------Estilo Imagenes -----------*/
 
 .img-nosotrosCarlos{
-    width: 200px;
-    height: 220px;
+    width: 100%;
     margin: 0px;
-    padding: 0px;
     border: outset;
     padding: 1px;
 }
 .img-nosotrosBebe{
-    width: 480px;
-    height: 350px;
+    width: 80%;
+    margin: 0px;
     border: outset;
     padding: 1px;
 }
 .img-nosotrosNiños{
-    width: 350px;
-    height: 300px;
+    width: 100%;
+    margin: 0px;
     padding: 1px;
     border: outset;
 }
-
-/*----------Estilo Datos Fundación-----------*/
-#fund-datos{
+#container-p{
+    flex-wrap: wrap;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    box-sizing: border-box;
+}
+/*----------Estilo Datos Fundación-----------*/
+.fund-datos{
+    display: flex;
 }
 
 .sub-datos{
-    font-family: Questrial;
+    font-family: Arial;
     font-style: normal;
     font-weight: bold;
-    margin-top: 5%;
   }
+
 
   /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -93,11 +79,23 @@
     }
     .img-nosotrosBebe{
         width: 95%;
-        height: 95%;
+     
     }
     .img-nosotrosNiños{
         width: 95%;
-        height: 95%;
+        
+    }
+    .fund-datos{
+        
+        display: flex;
+        padding-left: 0;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .fund-datos ul{
+        padding-left: 5%
+        
     }
 }
 @media (max-width: 500px){
