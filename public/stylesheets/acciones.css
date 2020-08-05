@@ -33,22 +33,14 @@
 /*------------Estilo Botones-----------*/
 
 #ir {
+    cursor: pointer;
+    border: none;
+    
     width: 20%;
     font-size: small;
     margin: 5px;
     color: white;
-    background-color: rgb(243, 156, 31);
-    border-radius: 10px;
-    transition: transform 0.5 ease;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, .65);
-}
-
-#donar {
-    width: 40%;
-    font-size: small;
-    margin: 5px;
-    color: white;
-    background-color: rgb(243, 156, 31);
+    background-color: #967cdd;
     border-radius: 10px;
     transition: transform 0.5 ease;
     box-shadow: 0 15px 50px rgba(0, 0, 0, .65);
@@ -56,13 +48,29 @@
 
 #ir:hover {
     color: #000!important;
-    background-color: rgb(233, 142, 14);
+    background-color: #967cdd;
     transform: scale(1.01);
 }
 
-#donar:hover {
+.donar {
+    cursor: pointer;
+    border: none;
+    
+    width: 20%;
+    font-size: small;
+    margin: 5px;
+    color: white;
+    background-color: #967cdd;
+    border-radius: 10px;
+    transition: transform 0.5 ease;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .65);
+}
+
+
+
+.donar:hover {
     color: #000!important;
-    background-color: rgb(233, 142, 14);
+    background-color: #967cdd;
     transform: scale(1.01);
 }
 

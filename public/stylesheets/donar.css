@@ -22,7 +22,9 @@
     width: 150px!important;
     height: 100px!important;
     font-size: 20px;
-    background-color: rgb(243, 156, 31);
+    cursor: pointer;
+    border: none;
+    background-color: #967cdd;
     border-radius: 10px;
     transition: transform 0.5 ease;
     box-shadow: 0 15px 50px rgba(0, 0, 0, .65);
@@ -30,7 +32,7 @@
 
 .__donar .__botones-donar .__btn-donar:hover {
     color: #000!important;
-    background-color: rgb(233, 142, 14);
+    background-color: #967cdd;
     transform: scale(1.01);
 }
 

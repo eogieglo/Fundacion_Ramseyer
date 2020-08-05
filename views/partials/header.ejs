@@ -1,46 +1,72 @@
-<header class="header">
-    <div class="col-12 mx-auto">
-        <div class="row mx-auto">
-            <nav class="col-12 col-lg-6 navbar navbar-expand-lg navbar-light bg-light d-flex mr-lg-auto">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bf_bg_header fixed-top py-1">
+        <div class="container-fluid p-1 
+        d-flex bd-highlight">
 
-                <a class="col-12 col-lg-6 mx-auto d-flex justify-content-center" href="#">
-                    <img class="logo mx-auto" src="../images/logo-header.jpeg" alt=""><span class="barra"></span>
-                </a>
-                <div class="container d-flex mx-auto justify-content-center">
-                    <button class="col-12 navbar-toggler mx-auto my-1" style="outline: none!important;" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="col-12 justify-content-center collapse navbar-collapse px-0" id="navbarSupportedContent">
-                    <ul class="__ul-nav navbar-nav px-0 my-1">
 
-                        <li class="__li-nav nav-item my-1 mx-lg-1 d-flex justify-content-center">
-                            <a class="nav-link active text-center d-inline my-auto mx-auto" href="#nosotros">Nosotros<span class="sr-only">Nosotros</span></a>
-                        </li>
-                        <li class="__li-nav nav-item my-1 mx-lg-1 d-flex justify-content-center">
-                            <a class="nav-link active text-center d-inline my-auto mx-auto" href="#accionesConcretas">Acciones Concretas<span class="sr-only">Acciones Concretas</span></a>
-                        </li>
-                        <li class="__li-nav nav-item my-1 mx-lg-1 d-flex justify-content-center">
-                            <a href="https://www.facebook.com/fundacionramseyer/photos" target="_blank" class="nav-link active text-center d-inline my-auto mx-auto">Imágenes<span class="sr-only">Imágenes</span></a>
-                        </li>
-                        <li class="__li-nav nav-item my-1 mx-lg-1 d-flex justify-content-center">
-                            <a class="nav-link active text-center d-inline my-auto mx-auto" href="#involucrate">Involucrate<span class="sr-only">Involucrate</span></a>
-                        </li>
-                        <li class="__li-nav nav-item my-1 mx-lg-1 d-flex justify-content-center">
-                            <a href="https://twitter.com/Fundac_Ramseyer" target="_blank" class="nav-link active text-center d-inline my-auto mx-auto">Noticias<span class="sr-only">Noticias</span></a>
-                        </li>
-                        <li class="__li-nav nav-item my-1 mx-lg-1 d-flex justify-content-center">
-                            <a class="nav-link active text-center d-inline my-auto mx-auto" href="#contacto">Contacto<span class="sr-only">Contacto</span></a>
-                        </li>
+            <a class="navbar-brand p-0
+            mr-auto
+            bd-highlight
+            " href="#">
+                <img alt="Logo Fundacion Ramseyer" src="../images/logo-header.jpeg"" width=" 80">
+            </a>
+
+
+            <!-- BOTON DONAR -->
+            <a href="#donar" class="btn my-2 my-sm-0 mx-3 d-lg-none __btn-donar"
+                type="submit">DONAR</a>
 
 
 
-                    </ul>
-                </div>
-            </nav>
-            <div class="boton col-11 col-md-4 col-lg-2 d-flex mx-auto justify-content-center mt-2 mb-4 px-0  mr-lg-5 ml-lg-auto my-lg-auto">
-                <a href="#id_donar" type="button" class="__btn-donar col-12 mx-auto btn btn-warning btn-block ml-lg-auto">Donar</a>
+            <!-- BOTON DESPLEGABLE -->
+            <button class="navbar-toggler bd-highlight 
+            " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- NAVBAR ITEMS -->
+            <div class="collapse navbar-collapse pt-4 pt-sm-0 flex-row-reverse" id="navbarNav">
+                <ul class="navbar-nav navbar-right mt-1 
+                d-flex align-items-stretch
+                ">
+
+
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+
+
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link" href="#acciones">Acciones Concretas</a>
+                    </li>
+
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link" href="https://www.facebook.com/fundacionramseyer/photos">Fotos</a>
+                    </li>
+
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link" href="#involucrate">Involucrate</a>
+                    </li>
+
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link" href="http://blog.fundacionramseyer.org.ar/">Noticias</a>
+                    </li>
+
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+
+                    <!-- BOTON DONAR -->
+                    <a href="#donar" class="btn my-2 my-sm-0 mx-3 d-none d-lg-block __btn-donar"
+                    type="submit">DONAR</a>
+
+
+                </ul>
             </div>
+
+
+
         </div>
-    </div>
+    </nav>
 </header>
