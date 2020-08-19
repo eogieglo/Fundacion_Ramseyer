@@ -44,13 +44,13 @@ let indexFunctions = {
             service: "gmail.com",
             secure: false,
             auth: {
-                user: "mariotroiano2@gmail.com",
-                pass: "Marito1993!!"
+                user: "enviofarmaciadigital@gmail.com",
+                pass: "papitaloca23"
             },            
         });
         
         let mailOptions = {
-          from: "mariotroiano2@gmail.com",
+          from: "enviofarmaciadigital@gmail.com",
           to: req.body.email,
           subject: "Hola, nos contactamos desde la Fundación Ramseyer",
           html: "<p> Gracias por suscribirte a nuestra fundación </p>"
