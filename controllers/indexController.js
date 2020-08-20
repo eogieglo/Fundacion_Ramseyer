@@ -8,31 +8,43 @@ let indexFunctions = {
     
     contact : (req, res, next) =>{     
         
+        let emailContent = `
+        <ul>
+        <li>Nombre : ${req.body.nombre}</li>
+        <li>Email del sujeto : <strong> ${req.body.email}</strong>
+        </ul>
+        <p>Mensaje : ${req.body.mensaje}</p>
+        `
+
         let transporter = nodemailer.createTransport({
-            service: "gmail.com",
+            host: "mail.fundacionramseyer.org.ar",
+            port : 26,
             secure: false,
             auth: {
-                user: "enviofarmaciadigital@gmail.com",
-                pass: "papitaloca23"
-            },            
+                user: "administracion@fundacionramseyer.org.ar",
+                pass: "Admin2020*"
+            },
+            tls : {
+                rejectUnauthorized : false
+            }            
         });
         
+
         let mailOptions = {
-            from: "enviofarmaciadigital@gmail.com",
-            to: "recibidofarmaciadigital@gmail.com",
+            from:  "administracion@fundacionramseyer.org.ar",
+            to: "administracion@fundacionramseyer.org.ar",
             subject: req.body.asunto,
-            html: "<p>Nombre : </p> " + req.body.nombre + "<br> <p>Email del sujeto : </p> " +             
-            req.body.email + "<br> <p>Mensaje : </p> " + req.body.mensaje
+            html: emailContent
         }           
         
         transporter.sendMail(mailOptions, (error, info)=>{
-            // if(error){
-            //     console.log('no se pudo enviar el email ' + error)
-            // }
-            // else{
-            //     console.log('Email sent: ' + info.response);
-            // }
-            res.redirect('/')
+            if(error){
+                console.log('no se pudo enviar el email ' + error)
+            }
+            else{
+                console.log('Email enviado con exito');
+                res.redirect('/')
+            }
         })       
         
     },   
@@ -41,16 +53,20 @@ let indexFunctions = {
     sendNewsletter : (req, res, next)=>{
     
         let transporter = nodemailer.createTransport({
-            service: "gmail.com",
+            host: "mail.fundacionramseyer.org.ar",
+            port : 26,
             secure: false,
             auth: {
-                user: "enviofarmaciadigital@gmail.com",
-                pass: "papitaloca23"
-            },            
+                user: "administracion@fundacionramseyer.org.ar",
+                pass: "Admin2020*"
+            },
+            tls : {
+                rejectUnauthorized : false
+            }                 
         });
         
         let mailOptions = {
-          from: "enviofarmaciadigital@gmail.com",
+          from: "administracion@fundacionramseyer.org.ar",
           to: req.body.email,
           subject: "Hola, nos contactamos desde la Fundación Ramseyer",
           html: "<p> Gracias por suscribirte a nuestra fundación </p>"
@@ -58,13 +74,13 @@ let indexFunctions = {
         }
         
         transporter.sendMail(mailOptions, (error, info)=>{
-            // if(error){
-            //     console.log('no se pudo enviar el email ' + error)
-            // }
-            // else{
-            //     console.log('Email sent: ' + info.response);
-            // }
-            res.redirect('/')
+            if(error){
+                console.log('no se pudo enviar el email ' + error)
+            }
+            else{
+                console.log('Email sent: ' + info.response);
+                res.redirect('/')
+            }
         })      
     }
     
